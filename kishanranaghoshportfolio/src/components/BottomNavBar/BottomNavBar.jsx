@@ -59,7 +59,7 @@ function BottomNavBar() {
             transition={{ duration: 0.4, delay: 1.7 }}
           >
             <NavLink
-              to="/Contact"
+              to="/contactme"
               className={({ isActive }) =>
                 `${
                   isActive ? "bg-pink-950 text-white" : ""
