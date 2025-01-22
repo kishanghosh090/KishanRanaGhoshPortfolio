@@ -7,8 +7,12 @@ import { GrProjects } from "react-icons/gr";
 import { motion } from "framer-motion";
 function BottomNavBar() {
   return (
-    <div className="fixed bottom-[12px] w-[100%]  p-4 z-50 flex justify-center items-center ">
-      <ul className="flex justify-between items-center gap-7  px-1 py-1 rounded-full backdrop-blur-sm bg-gradient-to-br from-indigo-500 to-fuchsia-500  border-4 border-neutral-700">
+    <motion.div
+      initial={{ transform: "translateY(100px)" }}
+      animate={{ transform: "translateY(0)" }}
+      className="fixed bottom-[12px] w-[100%]  p-4 z-50 flex justify-center items-center "
+    >
+      <motion.ul className="flex justify-between items-center gap-7  px-1 py-1 rounded-full backdrop-blur-sm bg-gradient-to-br from-indigo-500 to-fuchsia-500  border-4 border-neutral-700">
         <li>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -84,8 +88,8 @@ function BottomNavBar() {
             </NavLink>
           </motion.div>
         </li>
-      </ul>
-    </div>
+      </motion.ul>
+    </motion.div>
   );
 }
 
