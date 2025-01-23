@@ -71,7 +71,7 @@ function Contact() {
               whileInView={{ opacity: 1, y: 0 }}
               initial={{ opacity: 0, y: -100 }}
               transition={{ duration: 1.5 }}
-              className=" text-center text-4xl my-5 mb-20"
+              className=" text-center text-4xl my-2 mb-20"
             >
               Contact Me
             </motion.h1>

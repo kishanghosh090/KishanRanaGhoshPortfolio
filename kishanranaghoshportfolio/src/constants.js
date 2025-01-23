@@ -9,12 +9,14 @@ export const EDUCATION_DETAILS = [
   {
     collageName: "IIT Madras",
     collageImg: `${IITM}`,
+    year: "2024-2028",
     aboutCollage:
       "I'm a dedicated college student of IITM with a passion for exploring data-driven solution! As a college student about data science, I've been exploring various projects.",
   },
   {
     collageName: "Gour Mahavidyalaya",
     collageImg: `${GOUR}`,
+    year: "2024-2028",
     aboutCollage:
       "A dedicated 1st-year Computer Science student with a growing expertise in software development and problem-solving. Proficient in technologies like javascript, Python, and Linux systems, with hands-on experience in various projects. Eager to expand my skills and contribute to cutting-edge technological solutions",
   },

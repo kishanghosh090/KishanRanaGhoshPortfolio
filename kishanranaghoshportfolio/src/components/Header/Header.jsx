@@ -11,7 +11,7 @@ function Header() {
     <div className="bg-neutral-950 text-white border-b border-neutral-900 pb-4 lg:mb-3 p-3">
       <div className="flex justify-between items-center">
         <h1 className="text-3xl font-thin tracking-tight">KRG</h1>
-        <button onClick={() => setIsOpen(!isOpen)} className="text-3xl">
+        <button onClick={() => setIsOpen(!isOpen)} className="text-2xl">
           Menu
         </button>
       </div>
