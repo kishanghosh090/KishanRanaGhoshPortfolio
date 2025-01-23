@@ -33,12 +33,7 @@ const Home = () => {
               >
                 Kishan Rana Ghosh
               </motion.h1>
-              <motion.span
-                initial="hidden"
-                animate="visible"
-                variants={container(0.5)}
-                className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 text-4xl tracking-tight text-transparent bg-clip-text"
-              >
+              <motion.span className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 text-4xl tracking-tight text-transparent bg-clip-text">
                 <TypeAnimation
                   sequence={[
                     "I Am A Web Developer",
