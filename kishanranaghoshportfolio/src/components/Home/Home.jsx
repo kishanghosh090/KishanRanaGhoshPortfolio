@@ -6,6 +6,8 @@ import BottomNavBar from "../BottomNavBar/BottomNavBar";
 import { TypeAnimation } from "react-type-animation";
 import Header from "../Header/Header.jsx";
 import { NavLink } from "react-router-dom";
+import Technologies from "../Technologies/Technologies.jsx";
+import Footer from "../Footer/Footer.jsx";
 const Home = () => {
   const container = (delay) => ({
     hidden: { opacity: 0, x: -100 },
@@ -21,8 +23,8 @@ const Home = () => {
   return (
     <>
       <Header />
-      <div className="bg-neutral-950 text-white border-b border-neutral-900 pb-4 lg:mb-35 pt-5">
-        <div className="flex flex-wrap">
+      <div className="bg-neutral-950 text-white border-b border-neutral-900  lg:mb-35 pt-5 pb-20">
+        <div className="flex flex-wrap border-b border-neutral-900 py-4">
           <div className="w-full lg:w-1/2">
             <div className="flex flex-col items-center pl-6 pr-6 lg:items-start ">
               <motion.h1
@@ -33,7 +35,7 @@ const Home = () => {
               >
                 Kishan Rana Ghosh
               </motion.h1>
-              <motion.span className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 text-4xl tracking-tight text-transparent bg-clip-text">
+              <motion.span className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 text-3xl tracking-tight text-transparent bg-clip-text">
                 <TypeAnimation
                   sequence={[
                     "I Am A Web Developer",
@@ -99,8 +101,10 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <Technologies />
       </div>
       <BottomNavBar />
+      <Footer />
     </>
   );
 };
