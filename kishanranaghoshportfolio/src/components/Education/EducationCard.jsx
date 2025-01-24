@@ -1,8 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 function EducationCard(props) {
-  console.log(props.data);
-
   return (
     <div className="border-b border-neutral-900 mt-4 p-3">
       <div

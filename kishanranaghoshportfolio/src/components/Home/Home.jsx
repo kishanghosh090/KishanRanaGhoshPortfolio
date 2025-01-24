@@ -8,6 +8,9 @@ import Header from "../Header/Header.jsx";
 import { NavLink } from "react-router-dom";
 import Technologies from "../Technologies/Technologies.jsx";
 import Footer from "../Footer/Footer.jsx";
+import Contactme from "../ContactMe/ContactMe.jsx";
+import ContactForm from "../ContactMe/ContactForm.jsx";
+
 const Home = () => {
   const container = (delay) => ({
     hidden: { opacity: 0, x: -100 },
@@ -23,7 +26,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <div className="bg-neutral-950 text-white border-b border-neutral-900  lg:mb-35 pt-5 pb-20">
+      <div className="bg-neutral-950 text-white border-b border-neutral-900  lg:mb-35 pt-5 pb-20 overflow-hidden">
         <div className="flex flex-wrap border-b border-neutral-900 py-4">
           <div className="w-full lg:w-1/2">
             <div className="flex flex-col items-center pl-6 pr-6 lg:items-start ">
@@ -103,7 +106,12 @@ const Home = () => {
         </div>
         <Technologies />
       </div>
-      <BottomNavBar />
+      <div className="a">
+        <BottomNavBar />
+      </div>
+      <div className="overflow-hidden bg-neutral-950 text-white">
+        <ContactForm />
+      </div>
       <Footer />
     </>
   );

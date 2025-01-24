@@ -9,7 +9,7 @@ import Footer from "../Footer/Footer.jsx";
 const About = () => {
   return (
     <>
-      <div className="bg-neutral-950 text-white pb-32">
+      <div className="bg-neutral-950 text-white pb-32 overflow-hidden">
         <Header />
         <div className="bg-neutral-950 text-white ">
           <Education />
