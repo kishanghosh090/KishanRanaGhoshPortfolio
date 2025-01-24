@@ -3,7 +3,7 @@ import React from "react";
 
 function ProjectCard(props) {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden border border-neutral-900 p-3 mt-3">
       <div key={props.index} className="mb-8 flex flex-wrap lg:justify-center">
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}

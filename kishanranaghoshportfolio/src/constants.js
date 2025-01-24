@@ -26,7 +26,7 @@ export const EDUCATION_DETAILS = [
 ];
 
 // ---------------Projects-------------
-export const PROJECTS = [
+export const WEB_PROJECTS = [
   {
     name: "Gemini Clone (API Integration)",
     description:
