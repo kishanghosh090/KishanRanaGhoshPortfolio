@@ -23,6 +23,7 @@ function BottomNavBar() {
               color="primary"
               variant="flat"
               to="/"
+              replace={true}
               className={({ isActive }) =>
                 `${
                   isActive ? "bg-pink-950 text-white" : ""
@@ -42,6 +43,7 @@ function BottomNavBar() {
           >
             <NavLink
               to="/About"
+              replace={true}
               className={({ isActive }) =>
                 `${
                   isActive ? "bg-pink-950 text-white" : ""
@@ -60,6 +62,7 @@ function BottomNavBar() {
           >
             <NavLink
               to="/contactme"
+              replace={true}
               className={({ isActive }) =>
                 `${
                   isActive ? "bg-pink-950 text-white" : ""
@@ -78,6 +81,7 @@ function BottomNavBar() {
           >
             <NavLink
               to="/Projects"
+              replace={true}
               className={({ isActive }) =>
                 `${
                   isActive ? "bg-pink-950 text-white" : ""
