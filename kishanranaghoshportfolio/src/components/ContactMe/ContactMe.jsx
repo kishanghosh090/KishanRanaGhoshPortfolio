@@ -12,7 +12,7 @@ function Contact() {
   return (
     <>
       <Header />
-      <motion.div className="bg-neutral-950 text-white  z-40">
+      <motion.div className="bg-neutral-950 text-white  z-40 overflow-hidden">
         <Toaster />
         <ContactForm />
       </motion.div>
