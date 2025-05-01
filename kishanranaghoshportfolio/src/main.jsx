@@ -8,6 +8,7 @@ import Home from "./components/Home/Home.jsx";
 import About from "./components/About/About.jsx";
 import Contact from "./components/ContactMe/ContactMe.jsx";
 import Project from "./components/Project/Project.jsx";
+import Payments from "./components/Paymenys/Payments.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -19,6 +20,7 @@ createRoot(document.getElementById("root")).render(
           <Route path="project" element={<Project />} />
           <Route path="contactme" element={<Contact />} />
           <Route path="Projects" element={<Project />} />
+          <Route path="payments" element={<Payments />} />
         </Route>
       </Routes>
     </BrowserRouter>

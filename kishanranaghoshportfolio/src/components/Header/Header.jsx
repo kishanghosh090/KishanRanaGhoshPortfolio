@@ -34,6 +34,12 @@ function Header() {
                 Linkedin
               </li>
             </NavLink>
+            <NavLink to="/payments">
+              <li className="hover:text-[#66aaf9] cursor-pointer flex gap-4 bg-neutral-700 text-white w-auto py-2 px-3 rounded-full justify-start items-center md:w-[50%]">
+                <FaLinkedin />
+                pay
+              </li>
+            </NavLink>
           </motion.div>
         </motion.div>
       )}
