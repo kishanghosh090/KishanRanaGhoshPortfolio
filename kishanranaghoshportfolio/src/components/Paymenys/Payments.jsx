@@ -1,6 +1,8 @@
 import React from "react";
-
+// useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 const Payments = () => {
+  const navigate = useNavigate();
   const initiatePayment = async () => {
     const cashfree = Cashfree({
       mode: "production", //or production
@@ -25,6 +27,13 @@ const Payments = () => {
         redirectTarget: "_self",
       };
       cashfree.checkout(checkoutOptions); // redirects to hosted checkout
+
+      // Handle the redirect back to your site
+      window.addEventListener("message", (event) => {
+        if (event.data.type === "payment.success") {
+          navigate("/success");
+        }
+      });
     } catch (error) {
       console.error("Error initiating payment", error);
     }
